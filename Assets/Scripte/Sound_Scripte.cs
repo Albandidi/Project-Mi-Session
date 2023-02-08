@@ -6,13 +6,15 @@ using UnityEngine.UI;
 public class Sound_Scripte : MonoBehaviour
 {
     [SerializeField] Slider volSlider;
+
     // Start is called before the first frame update
     void Start()
     {
         if (PlayerPrefs.HasKey("Sound"))
         {
             PlayerPrefs.SetFloat("Sound", 1);
-            Loading();        }
+            Loading();
+        }
     }
     public void Changevol()
     {
